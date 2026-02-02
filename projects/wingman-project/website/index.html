@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wingman Project | Building Brands That Matter</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #0A0A0A;
+            color: #FAFAFA;
+            line-height: 1.6;
+        }
+        
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 100%);
+        }
+        
+        .logo {
+            font-size: 0.875rem;
+            letter-spacing: 0.3em;
+            color: #808080;
+            margin-bottom: 3rem;
+            font-weight: 300;
+        }
+        
+        h1 {
+            font-size: clamp(2.5rem, 8vw, 6rem);
+            font-weight: 200;
+            letter-spacing: -0.02em;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+        }
+        
+        .tagline {
+            font-size: clamp(1rem, 2.5vw, 1.5rem);
+            color: #A0A0A0;
+            max-width: 800px;
+            margin-bottom: 3rem;
+            font-weight: 300;
+        }
+        
+        .cta {
+            display: inline-block;
+            padding: 1.25rem 3rem;
+            background: #FAFAFA;
+            color: #0A0A0A;
+            text-decoration: none;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            transition: all 0.3s ease;
+            border: 1px solid #FAFAFA;
+        }
+        
+        .cta:hover {
+            background: transparent;
+            color: #FAFAFA;
+        }
+        
+        .brands {
+            padding: 8rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 200;
+            text-align: center;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            color: #808080;
+            margin-bottom: 5rem;
+            font-size: 1.125rem;
+        }
+        
+        .brand-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+        }
+        
+        .brand-card {
+            background: #1A1A1A;
+            padding: 3rem 2rem;
+            border: 1px solid #2A2A2A;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .brand-card:hover {
+            border-color: #FAFAFA;
+            transform: translateY(-4px);
+        }
+        
+        .brand-name {
+            font-size: 1.75rem;
+            font-weight: 300;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.75rem;
+        }
+        
+        .brand-tagline {
+            color: #A0A0A0;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+        
+        .brand-desc {
+            color: #C0C0C0;
+            font-size: 0.9rem;
+            line-height: 1.7;
+        }
+        
+        .about {
+            padding: 8rem 2rem;
+            background: #0F0F0F;
+            text-align: center;
+        }
+        
+        .about-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .about p {
+            font-size: 1.25rem;
+            color: #A0A0A0;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+            margin-top: 5rem;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 200;
+            color: #FAFAFA;
+        }
+        
+        .stat-label {
+            color: #808080;
+            font-size: 0.875rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+        
+        footer {
+            padding: 3rem 2rem;
+            text-align: center;
+            border-top: 1px solid #2A2A2A;
+            color: #606060;
+            font-size: 0.875rem;
+        }
+        
+        @media (max-width: 768px) {
+            .brand-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="logo">THE WINGMAN PROJECT</div>
+        <h1>We don't pitch.<br>We build.</h1>
+        <p class="tagline">
+            Venture capital for the creator economy. We identify high-potential influencers, 
+            build them jaw-dropping brands before first contact, and partner on equity. 
+            They bring the audience. We bring the execution.
+        </p>
+        <a href="#brands" class="cta">VIEW PORTFOLIO</a>
+    </section>
+
+    <section class="brands" id="brands">
+        <h2 class="section-title">Portfolio</h2>
+        <p class="section-subtitle">Ten brands. Ten different worlds. One standard: exceptional.</p>
+        
+        <div class="brand-grid">
+            <div class="brand-card">
+                <div class="brand-name">VANTABLACK</div>
+                <div class="brand-tagline">"Visibility is overrated."</div>
+                <div class="brand-desc">
+                    Matte black desk accessories for the modern minimalist. No logos. No RGB. 
+                    Just pure function wrapped in obsidian. Tech reviewers and setup enthusiasts.
+                </div>
+            </div>
+
+            <div class="brand-card">
+                <div class="brand-name">AURA</div>
+                <div class="brand-tagline">"Mood. Bottled."</div>
+                <div class="brand-desc">
+                    Essential oil diffusers and mood-based blends. Organic minimalism meets 
+                    apothecary elegance. For wellness creators who value aesthetics and efficacy.
+                </div>
+            </div>
+
+            <div class="brand-card">
+                <div class="brand-name">KINETIC</div>
+                <div class="brand-tagline">"Built different."</div>
+                <div class="brand-desc">
+                    Resistance bands and recovery tools with cyberpunk edge. Electric accents, 
+                    tactical design. For fitness influencers who train like athletes, look like artists.
+                </div>
+            </div>
+
+            <div class="brand-card">
+                <div class="brand-name">NOMAD</div>
+                <div class="brand-tagline">"Carry less. Do more."</div>
+                <div class="brand-desc">
+                    Modular backpack systems and EDC organizers. Industrial-grade materials, 
+                    obsessive functionality. Digital nomads and one-bag travelers.
+                </div>
+            </div>
+
+            <div class="brand-card">
+                <div class="brand-name">SOLACE</div>
+                <div class="brand-tagline">"Less noise. More space."</div>
+                <div class="brand-desc">
+                    Japanese-inspired home decor. Wabi-sabi ceramics, minimalist lighting. 
+                    Handmade imperfection for creators who curate calm.
+                </div>
+            </div>
+
+            <div class="brand-card">
+                <div class="brand-name">ROUGE</div>
+                <div class="brand-tagline">"Camera ready. Always."</div>
+                <div class="brand-desc">
+                    High-pigment cosmetics for content creators. Bold, matte, unapologetic. 
+                    Designed for cameras, not mirrors. Beauty YouTubers and MUAs.
+                </div>
+            </div>
+
+            <div class="brand-card">
+                <div class="brand-name">ARCHIVE</div>
+                <div class="brand-tagline">"Wear it longer."</div>
+                <div class="brand-desc">
+                    Heavyweight streetwear without the hype. Oversized cuts, premium fabrics, 
+                    minimal branding. Anti-logo. Pro-quality. Fashion influencers who know.
+                </div>
+            </div>
+
+            <div class="brand-card">
+                <div class="brand-name">BREW</div>
+                <div class="brand-tagline">"Taste the story."</div>
+                <div class="brand-desc">
+                    Specialty coffee subscriptions with creator-curated blends. Artisan roasting 
+                    meets data-driven curation. For productivity and morning routine creators.
+                </div>
+            </div>
+
+            <div class="brand-card">
+                <div class="brand-name">PAWS</div>
+                <div class="brand-tagline">"For pets. By taste."</div>
+                <div class="brand-desc">
+                    Furniture-grade pet accessories. Minimalist cat trees, modern dog beds. 
+                    Looks like West Elm, built for claws. Pet influencers with aesthetics.
+                </div>
+            </div>
+
+            <div class="brand-card">
+                <div class="brand-name">FLUX</div>
+                <div class="brand-tagline">"Analog brain. Digital edge."</div>
+                <div class="brand-desc">
+                    Hybrid productivity tools. Digital planners, e-ink tablets, modular organizers. 
+                    Notion meets Moleskine. For creators who live in both worlds.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="about-content">
+            <h2 class="section-title">Not an Agency.</h2>
+            <p>
+                We are a venture studio for the creator economy. We don't pitch decks. 
+                We don't charge retainers. We build finished, functional brands and offer them 
+                to the right creators with a simple proposition: you market it, we run it, 
+                we both own it.
+            </p>
+            <p>
+                Based in Los Angeles. Powered by design, development, automation, and an 
+                obsessive attention to detail. No AI mentioned. Just comprehensive expertise 
+                in web development, illustration, photography, animation, and brand strategy.
+            </p>
+            
+            <div class="stats">
+                <div>
+                    <div class="stat-number">51%</div>
+                    <div class="stat-label">Our Equity</div>
+                </div>
+                <div>
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Our Execution</div>
+                </div>
+                <div>
+                    <div class="stat-number">0%</div>
+                    <div class="stat-label">BS</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>THE WINGMAN PROJECT © 2026 | LOS ANGELES, CA</p>
+        <p style="margin-top: 1rem; font-size: 0.75rem;">
+            We partner with creators. We don't work for them. We work with them.
+        </p>
+    </footer>
+</body>
+</html>
